@@ -1,9 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=120&section=header&text=&animation=fadeIn" width="100%"/>
-
-# Ojas Dhargave
-### Full-Stack Developer · UI/UX Designer · CS Undergrad @ IIIT Vadodara
+![header](./header.svg)
 
 <p align="center">
   <a href="mailto:ojasdhargave@gmail.com"><img src="https://img.shields.io/badge/Gmail-ojasdhargave@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white"/></a>
@@ -20,6 +17,13 @@
 ## 🧑‍💻 About Me
 
 I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for building end-to-end digital products — from pixel-perfect UI/UX to robust backend systems. I enjoy working at the intersection of **design and engineering**, creating tools that are both functional and beautiful.
+
+- 🔭 Currently building a **SaaS Backend Boilerplate Generation Platform** with an integrated IDE
+- 🤖 Explored real-time **food detection with YOLO + OpenCV** achieving 88% mAP
+- 🎨 **Joint Secretary** at DOT – Design & Tech Club, IIITV
+- 🏆 Organized **HackIIITV'25** and **TEDx IIITV'26**
+- 🌱 Learning: System Design, Advanced DSA, 3D Design with Blender
+- 🗣️ Languages: English (fluent) · Hindi (native) · Japanese (beginner)
 
 ---
 
@@ -172,18 +176,13 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 
 ## 🚀 Featured Projects
 
-### 🍽️ PortionUp: Automated Meal Nutrient Estimator
+### 🍽️ Automated Meal Nutrient Estimator
 > Real-time multi-object food detection & nutritional analysis pipeline
-- > Comprehensive food detection & portion tracking app
 
 - Built with **YOLO + OpenCV** — achieved **88% mAP** on custom dataset
 - Reduced inference latency by **35%** via image preprocessing optimization
 - Mapped detected food items to calories & macronutrients with **<10% variance**
 
-- Robust backend + interactive frontend + dedicated ML component
-- [View on GitHub →](https://github.com/ojasdhargave-iiitv/portionup)
-
-`TypeScript` `React` `Machine Learning`
 `Python` `YOLO` `OpenCV` `NumPy` `FastAPI` `React Native`
 
 ---
@@ -196,6 +195,16 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 - In-browser code editor with **compilation + runtime execution** support
 
 `TypeScript` `React` `Node.js` `Express` `Docker` `PostgreSQL`
+
+---
+
+### 🍱 PortionUp
+> Comprehensive food detection & portion tracking app
+
+- Robust backend + interactive frontend + dedicated ML component
+- [View on GitHub →](https://github.com/ojasdhargave-iiitv/portionup)
+
+`TypeScript` `React` `Machine Learning`
 
 ---
 
@@ -222,6 +231,16 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 
 ---
 
+## 🏅 Achievements & Responsibilities
+
+- 🎗️ **Joint Secretary** — DOT: Design & Tech Club, IIITV *(Jun 2025 – Present)*
+- 🛠️ **Design & Animation Lead** — Technical Committee, IIITV *(Aug 2025 – Apr 2026)*
+- 🧠 **Organizer** — HackIIITV'25 *(Apr 2025)*
+- 🎤 **Organizer** — TEDx IIITV'26 *(Feb 2026)*
+- 🎨 Hosted **UI/UX** and **3D Blender** workshops for 100+ students
+
+---
+
 ## 📬 Connect with Me
 
 <div align="center">
@@ -235,6 +254,6 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0d1117&height=100&section=footer" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:0d1117,50:1a1a2e,100:0d1117&height=60&section=footer&reversal=false&animation=blinking" width="100%"/>
   <sub>⭐️ If you like my work, consider starring a repo! | Building reliable things — always iterating.</sub>
 </div>
