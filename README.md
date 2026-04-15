@@ -21,13 +21,6 @@
 
 I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for building end-to-end digital products — from pixel-perfect UI/UX to robust backend systems. I enjoy working at the intersection of **design and engineering**, creating tools that are both functional and beautiful.
 
-- 🔭 Currently building a **SaaS Backend Boilerplate Generation Platform** with an integrated IDE
-- 🤖 Explored real-time **food detection with YOLO + OpenCV** achieving 88% mAP
-- 🎨 **Joint Secretary** at DOT – Design & Tech Club, IIITV
-- 🏆 Organized **HackIIITV'25** and **TEDx IIITV'26**
-- 🌱 Learning: System Design, Advanced DSA, 3D Design with Blender
-- 🗣️ Languages: English (fluent) · Hindi (native) · Japanese (beginner)
-
 ---
 
 ## 🛠️ Tech Stack
@@ -179,13 +172,18 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 
 ## 🚀 Featured Projects
 
-### 🍽️ Automated Meal Nutrient Estimator
+### 🍽️ PortionUp: Automated Meal Nutrient Estimator
 > Real-time multi-object food detection & nutritional analysis pipeline
+- > Comprehensive food detection & portion tracking app
 
 - Built with **YOLO + OpenCV** — achieved **88% mAP** on custom dataset
 - Reduced inference latency by **35%** via image preprocessing optimization
 - Mapped detected food items to calories & macronutrients with **<10% variance**
 
+- Robust backend + interactive frontend + dedicated ML component
+- [View on GitHub →](https://github.com/ojasdhargave-iiitv/portionup)
+
+`TypeScript` `React` `Machine Learning`
 `Python` `YOLO` `OpenCV` `NumPy` `FastAPI` `React Native`
 
 ---
@@ -198,16 +196,6 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 - In-browser code editor with **compilation + runtime execution** support
 
 `TypeScript` `React` `Node.js` `Express` `Docker` `PostgreSQL`
-
----
-
-### 🍱 PortionUp
-> Comprehensive food detection & portion tracking app
-
-- Robust backend + interactive frontend + dedicated ML component
-- [View on GitHub →](https://github.com/ojasdhargave-iiitv/portionup)
-
-`TypeScript` `React` `Machine Learning`
 
 ---
 
@@ -231,16 +219,6 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=ojasdhargave-iiitv&theme=tokyonight&hide_border=true&background=0d1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF" />
 </div>
-
----
-
-## 🏅 Achievements & Responsibilities
-
-- 🎗️ **Joint Secretary** — DOT: Design & Tech Club, IIITV *(Jun 2025 – Present)*
-- 🛠️ **Design & Animation Lead** — Technical Committee, IIITV *(Aug 2025 – Apr 2026)*
-- 🧠 **Organizer** — HackIIITV'25 *(Apr 2025)*
-- 🎤 **Organizer** — TEDx IIITV'26 *(Feb 2026)*
-- 🎨 Hosted **UI/UX** and **3D Blender** workshops for 100+ students
 
 ---
 
