@@ -132,6 +132,10 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
       <br><sub><b>Supabase</b></sub>
     </td>
     <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=prisma" width="45" height="45" alt="prisma"/>
+      <br><sub><b>Prisma</b></sub>
+    </td>
+    <td align="center" width="90">
       <img src="https://skillicons.dev/icons?i=vercel" width="45" height="45" alt="Vercel"/>
       <br><sub><b>Vercel</b></sub>
     </td>
@@ -153,6 +157,10 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
     <td align="center" width="90">
       <img src="https://skillicons.dev/icons?i=docker" width="45" height="45" alt="Docker"/>
       <br><sub><b>Docker</b></sub>
+    </td>
+    <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=githubactions" width="45" height="45" alt="githubactions"/>
+      <br><sub><b>Github Actions</b></sub>
     </td>
     <td align="center" width="90">
       <img src="https://skillicons.dev/icons?i=vscode" width="45" height="45" alt="VS Code"/>
