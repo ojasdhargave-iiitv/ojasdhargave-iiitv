@@ -139,6 +139,13 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
       <img src="https://skillicons.dev/icons?i=vercel" width="45" height="45" alt="Vercel"/>
       <br><sub><b>Vercel</b></sub>
     </td>
+    <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=auth0" width="45" height="45" alt="Vercel"/>
+      <br><sub><b>Auth0</b></sub>
+    <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=linux" width="45" height="45" alt="Vercel"/>
+      <br><sub><b>Linux</b></sub>
+    </td>
   </tr>
 </table>
 
