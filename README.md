@@ -223,19 +223,6 @@ I'm a **Computer Science undergrad at IIIT Vadodara** with a passion for buildin
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ojasdhargave-iiitv&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&text_color=c9d1d9" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ojasdhargave-iiitv&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9" height="165"/>
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=ojasdhargave-iiitv&theme=tokyonight&hide_border=true&background=0d1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF" />
-</div>
-
----
-
 ## 📬 Connect with Me
 
 <div align="center">
