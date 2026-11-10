@@ -19,11 +19,11 @@ PROFILE = dict(
     link="github.com/ojasdhargave-iiitv",
 )
 TILES = [
-    dict(label="ENGINEER", big="Full-stack", it="dev", bg="#3355ff", fg="#ffffff",
-         text="I work across UI/UX, APIs, databases and deployment to turn ideas into complete products."),
-    dict(label="EXPLORE", big="Systems", it="& AI", bg="#ee4035", fg="#ffffff",
-         text="Interested in distributed systems, cybersecurity, computer vision and practical AI integrations."),
-    dict(label="LEARN", big="CSE", it="'28", bg="#ffc82c", fg="#1a1a1a",
+    dict(label="BUILD",  big="3",   it="projects", bg="#3355ff", fg="#ffffff",
+         text="PortionUp, a SaaS Backend Boilerplate IDE, and a from-scratch Self Driving Car."),
+    dict(label="DETECT", big="88%", it="mAP",      bg="#ee4035", fg="#ffffff",
+         text="YOLO + OpenCV on a custom food dataset, with 35% lower inference latency."),
+    dict(label="LEARN",  big="CSE", it="'28",      bg="#ffc82c", fg="#1a1a1a",
          text="Computer Science at IIIT Vadodara, shipping from design to deploy."),
 ]
 # repo=None -> card is not linked and shows no star count
@@ -197,66 +197,37 @@ def tiles():
     return svg(880, 205, out)
 
 def techstack():
-    # Compact logo tiles inspired by the icon grid on the portfolio screenshot.
-    # Each icon is drawn inline so the generated SVG has no external dependencies.
     groups = [
-        ("LANGUAGES", [
-            ("C/C++", "C++", "#0878bd", "#ffffff"), ("JAVASCRIPT", "JS", "#f0d84a", "#171717"),
-            ("TYPESCRIPT", "TS", "#1684c7", "#ffffff"), ("PYTHON", "Py", "#306998", "#ffffff"),
-            ("GO", "Go", "#00add8", "#ffffff"), ("HTML", "5", "#e6532f", "#ffffff"),
-            ("CSS", "3", "#2476b9", "#ffffff"), ("SQL", "SQL", "#477a9b", "#ffffff"),
-        ]),
-        ("FRONTEND", [
-            ("REACT.JS", "R", "#17212b", "#61dafb"), ("TAILWIND", "TW", "#17212b", "#38bdf8"),
-            ("THREE.JS", "3D", "#252535", "#e8e8f0"), ("FIGMA", "F", "#252535", "#f24e1e"),
-            ("BLENDER", "B", "#252535", "#f5792a"),
-        ]),
-        ("BACKEND", [
-            ("NODE.JS", "JS", "#1d292b", "#83cd29"), ("EXPRESS.JS", "EX", "#30343b", "#e7e7e7"),
-            ("FASTAPI", "API", "#087f78", "#ffffff"), ("OPENCV", "CV", "#262b39", "#ff3b43"),
-        ]),
-        ("DATABASES & CLOUD", [
-            ("MONGODB", "M", "#123b32", "#47a248"), ("MYSQL", "my", "#24323d", "#e5a83e"),
-            ("POSTGRESQL", "PG", "#24394b", "#8bb8d8"), ("REDIS", "R", "#4b2024", "#e34f4f"),
-            ("SUPABASE", "S", "#123c35", "#3ecf8e"), ("PRISMA", "P", "#29304a", "#9b9ff0"),
-            ("VERCEL", "V", "#252525", "#ffffff"), ("AWS", "aws", "#28303b", "#ffb84d"),
-        ]),
-        ("TOOLS & DEVOPS", [
-            ("GIT", "G", "#e84b3c", "#ffffff"), ("GITHUB", "GH", "#242936", "#ffffff"),
-            ("DOCKER", "D", "#147eb5", "#ffffff"), ("GITHUB ACTIONS", "CI", "#26334a", "#5b9bdb"),
-            ("VS CODE", "<> ", "#1d3345", "#35a8e8"), ("POSTMAN", "P", "#f16a3b", "#ffffff"),
-            ("LINUX", "TUX", "#282b32", "#f2d34f"),
-        ]),
+        ("LANGUAGES", ["C / C++", "JavaScript", "TypeScript", "Python", "Go", "HTML", "CSS", "SQL"]),
+        ("FRONTEND", ["React.js", "Tailwind CSS", "Three.js", "Figma", "Blender"]),
+        ("BACKEND", ["Node.js", "Express.js", "FastAPI", "OpenCV"]),
+        ("DATABASES & CLOUD", ["MongoDB", "MySQL", "PostgreSQL", "Redis", "Supabase", "Prisma", "Vercel", "AWS"]),
+        ("TOOLS & DEVOPS", ["Git", "GitHub", "Docker", "GitHub Actions", "VS Code", "Postman", "Linux"]),
     ]
-    W, x_label, x_panel = 880, 40, 220
-    panel_w, tile_w, tile_h, gap = 630, 75, 76, 3
-    y = 82
-    body = (f'<text x="40" y="49" class="serif" font-size="30" fill="{INK}">My '
+    W, H = 880, 494
+    label_x, pill_x = 40, 250
+    pill_h, gap_x, gap_y = 28, 8, 7
+    body = (f'<text x="40" y="54" class="serif" font-size="30" fill="{INK}">My '
             f'<tspan font-style="italic" fill="{BLUE}">toolkit</tspan></text>'
-            f'<text x="840" y="45" text-anchor="end" class="mono" font-size="10" '
+            f'<text x="840" y="50" text-anchor="end" class="mono" font-size="10" '
             f'letter-spacing="1.4" fill="{MUTE}">TECH STACK</text>')
-    for label, items in groups:
-        cols = min(len(items), 8)
-        rows = (len(items) + cols - 1) // cols
-        group_h = rows * tile_h + (rows - 1) * 3 + 18
-        body += (f'<text x="{x_label}" y="{y+group_h/2+3:.1f}" class="sans" '
-                 f'font-size="13" font-weight="700" fill="{INK}">{esc(label)}</text>'
-                 f'<rect x="{x_panel}" y="{y}" width="{panel_w}" height="{group_h}" rx="14" fill="#171816"/>')
-        for i, (name, mark, bg, fg) in enumerate(items):
-            col, row = i % cols, i // cols
-            tx = x_panel + 9 + col * (tile_w + gap)
-            ty = y + 9 + row * (tile_h + 3)
-            # A soft divider makes the individual icon cells feel like the reference grid.
-            if col:
-                body += f'<line x1="{tx-2}" y1="{ty}" x2="{tx-2}" y2="{ty+tile_h-1}" stroke="#30312e"/>'
-            body += (f'<rect x="{tx+18}" y="{ty+5}" width="39" height="39" rx="9" fill="{bg}"/>'
-                     f'<text x="{tx+37.5}" y="{ty+32}" text-anchor="middle" class="sans" '
-                     f'font-size="{17 if len(mark.strip()) <= 3 else 12}" font-weight="700" fill="{fg}">{esc(mark.strip())}</text>'
-                     f'<text x="{tx+37.5}" y="{ty+60}" text-anchor="middle" class="sans" '
-                     f'font-size="8.3" font-weight="600" letter-spacing=".1" fill="#f0f0eb">{esc(name)}</text>')
-        y += group_h + 15
-    height = y + 5
-    return svg(W, height, card(W, height) + body)
+    row_y = [89, 189, 255, 321, 421]
+    for (label, items), y in zip(groups, row_y):
+        body += (f'<text x="{label_x}" y="{y+19}" class="mono" font-size="10" '
+                 f'letter-spacing="1.1" fill="{MUTE}">{esc(label)}</text>')
+        x, current_y = pill_x, y
+        for item in items:
+            # Widths are tuned to the compact reference layout and wrap at the card edge.
+            width = max(54, min(116, 22 + len(item) * 6.1))
+            if x + width > 850:
+                x = pill_x
+                current_y += pill_h + gap_y
+            body += (f'<rect x="{x}" y="{current_y}" width="{width:.1f}" height="{pill_h}" '
+                     f'rx="8" fill="#ffffff" stroke="{EDGE}"/>'
+                     f'<text x="{x+width/2:.1f}" y="{current_y+18}" text-anchor="middle" '
+                     f'class="sans" font-size="11.5" fill="{INK}">{esc(item)}</text>')
+            x += width + gap_x
+    return svg(W, H, card(W, H) + body)
 
 def heading():
     css = ".h{fill:#141414}.i{fill:#3355ff}@media (prefers-color-scheme:dark){.h{fill:#e6edf3}.i{fill:#7b92ff}}"
