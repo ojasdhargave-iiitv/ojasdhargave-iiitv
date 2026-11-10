@@ -6,6 +6,10 @@
 @keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
 .bar{transform-origin:bottom;animation:grow .8s ease-out both}
 @keyframes grow{from{transform:scaleY(0)}to{transform:none}}
-.blink{animation:bl 1.4s steps(1) infinite}@keyframes bl{50%{opacity:.2}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}.cell{opacity:1!important}}
+.blink{animation:bl 1.4s steps(1) infinite}
+@keyframes bl{50%{opacity:.2}}
+@media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .cell{opacity:1!important}
+}
 .h{fill:#141414}.i{fill:#3355ff}@media (prefers-color-scheme:dark){.h{fill:#e6edf3}.i{fill:#7b92ff}}</style><text x="2" y="38" class="serif h" font-size="30">What I'm <tspan class="i" font-style="italic">coding</tspan></text></svg>
