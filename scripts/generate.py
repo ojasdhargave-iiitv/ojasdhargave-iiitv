@@ -195,6 +195,38 @@ def tiles():
                 "".join(f'<text x="{x+22}" y="{140+j*19}" class="sans" font-size="12.5" fill="{mutedfg}" opacity=".95">{esc(l)}</text>' for j, l in enumerate(lines)))
     return svg(880, 205, out)
 
+def techstack():
+    groups = [
+        ("LANGUAGES", ["C / C++", "JavaScript", "TypeScript", "Python", "Go", "HTML", "CSS", "SQL"]),
+        ("FRONTEND", ["React.js", "Tailwind CSS", "Three.js", "Figma", "Blender"]),
+        ("BACKEND", ["Node.js", "Express.js", "FastAPI", "OpenCV"]),
+        ("DATABASES & CLOUD", ["MongoDB", "MySQL", "PostgreSQL", "Redis", "Supabase", "Prisma", "Vercel", "AWS"]),
+        ("TOOLS & DEVOPS", ["Git", "GitHub", "Docker", "GitHub Actions", "VS Code", "Postman", "Linux"]),
+    ]
+    y = 104
+    body = (f'<text x="40" y="54" class="serif" font-size="30" fill="{INK}">My '
+            f'<tspan font-style="italic" fill="{BLUE}">toolkit</tspan></text>'
+            f'<text x="840" y="50" text-anchor="end" class="mono" font-size="10" '
+            f'letter-spacing="1.4" fill="{MUTE}">TECH STACK</text>')
+    for label, items in groups:
+        body += f'<text x="40" y="{y+5}" class="mono" font-size="10.5" letter-spacing="1.1" fill="{MUTE}">{esc(label)}</text>'
+        x, row, max_row = 250, 0, 0
+        for item in items:
+            width = max(54, len(item) * 7.1 + 22)
+            if x + width > 842:
+                row += 1
+                max_row = row
+                x = 250
+            chip_y = y + row * 34
+            body += (f'<rect x="{x}" y="{chip_y-15}" width="{width:.1f}" height="27" rx="7" '
+                     f'fill="#ffffff" stroke="{EDGE}"/>'
+                     f'<text x="{x+width/2:.1f}" y="{chip_y+3}" text-anchor="middle" class="sans" '
+                     f'font-size="11.5" fill="{INK}">{esc(item)}</text>')
+            x += width + 8
+        y += max(66, (max_row + 1) * 34 + 32)
+    height = y - 8
+    return svg(880, height, card(880, height) + body)
+
 def heading():
     css = ".h{fill:#141414}.i{fill:#3355ff}@media (prefers-color-scheme:dark){.h{fill:#e6edf3}.i{fill:#7b92ff}}"
     return svg(880, 56, f'<text x="2" y="38" class="serif h" font-size="30">What I\'m <tspan class="i" font-style="italic">coding</tspan></text>', css)
@@ -217,5 +249,6 @@ if __name__ == "__main__":
     write("heatmap.svg", heatmap(days))
     write("stats.svg", stats(days))
     write("tiles.svg", tiles())
+    write("techstack.svg", techstack())
     write("heading-coding.svg", heading())
     for i, p in enumerate(PROJECTS, 1): write(f"project-{i}.svg", project(p))
