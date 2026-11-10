@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <img src="./assets/hero.svg" alt="Ojas Dhargave: full-stack developer" width="100%"/>
@@ -7,7 +6,7 @@
 
 <img src="./assets/stats.svg" alt="Contribution stats for the last 12 months" width="100%"/>
 
-<img src="./assets/tiles.svg" alt="Engineering, exploration and learning highlights" width="100%"/>
+<img src="./assets/tiles.svg" alt="Build, detect, learn" width="100%"/>
 
 <img src="./assets/techstack.svg" alt="Tech stack: languages, frontend, backend, databases, cloud and tools" width="100%"/>
 
@@ -15,7 +14,7 @@
 
 <a href="https://github.com/ojasdhargave-iiitv/portionup"><img src="./assets/project-1.svg" alt="portionup" width="32%"/></a>
 <img src="./assets/project-2.svg" alt="saas-backend-ide" width="32%"/>
-<a href="https://github.com/ojasdhargave-iiitv/Self_driving_Car"><img src="./assets/project-3.svg" alt="self-driving-car" width="32%"/>
+<a href="https://github.com/ojasdhargave-iiitv/Self_driving_Car"><img src="./assets/project-3.svg" alt="self-driving-car" width="32%"/></a>
 
 <br><br>
 
