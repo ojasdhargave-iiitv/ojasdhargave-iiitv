@@ -219,7 +219,7 @@ def techstack():
         for item in items:
             # Widths are tuned to the compact reference layout and wrap at the card edge.
             width = max(54, min(116, 22 + len(item) * 6.1))
-            if x + width > 850:
+            if x + width > 790:
                 x = pill_x
                 current_y += pill_h + gap_y
             body += (f'<rect x="{x}" y="{current_y}" width="{width:.1f}" height="{pill_h}" '
