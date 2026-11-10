@@ -16,7 +16,7 @@ jobs:
         with: {python-version: "3.12"}
       - name: Generate SVG cards
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
         run: python scripts/generate.py
       - name: Commit
