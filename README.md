@@ -8,6 +8,8 @@
 
 <img src="./assets/tiles.svg" alt="Build, detect, learn" width="100%"/>
 
+<img src="./assets/techstack.svg" alt="Tech stack: languages, frontend, backend, databases, cloud and tools" width="100%"/>
+
 <img src="./assets/heading-coding.svg" alt="What I'm coding" width="100%"/>
 
 <a href="https://github.com/ojasdhargave-iiitv/portionup"><img src="./assets/project-1.svg" alt="portionup" width="32%"/></a>
